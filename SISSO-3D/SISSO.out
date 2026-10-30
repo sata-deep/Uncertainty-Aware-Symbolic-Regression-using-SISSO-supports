@@ -1,0 +1,100 @@
+****************************************************************
+  Sure Independence Screening and Sparsifying Operator (SISSO)  
+             Version SISSO.3.5, August, 2024.                
+****************************************************************
+
+Read in data from train.dat
+Standard Deviation (sqrt[sum(y-y_mean)^2/n]) of the target property:   2.17158
+Read in data from SISSO.in
+Property type:     1
+Number of tasks:        1
+Descriptor dimension:        3
+Number of samples for the task(s):     88
+Restarts :  0
+Scheme for feature storing in memory:        1
+Number of scalar features:       17
+Tier of the feature space (max depth of expression tree):        3
+Maximal feature complexity (number of operators in a feature):        5
+Unit of input primary feature, each represented by a row vector: 
+    1.00    0.00    0.00    0.00    0.00    0.00
+    1.00    0.00    0.00    0.00    0.00    0.00
+    1.00    0.00    0.00    0.00    0.00    0.00
+    0.00    1.00    0.00    0.00    0.00    0.00
+    0.00    1.00    0.00    0.00    0.00    0.00
+    0.00    1.00    0.00    0.00    0.00    0.00
+    0.00    0.00    1.00    0.00    0.00    0.00
+    0.00    0.00    1.00    0.00    0.00    0.00
+    0.00    0.00    1.00    0.00    0.00    0.00
+    0.00    0.00    0.00    1.00    0.00    0.00
+    0.00    0.00    0.00    1.00    0.00    0.00
+    0.00    0.00    0.00    1.00    0.00    0.00
+    0.00    0.00    0.00    0.00    1.00    0.00
+    0.00    0.00    0.00    0.00    1.00    0.00
+    0.00    0.00    0.00    0.00    1.00    0.00
+    0.00    0.00    0.00    0.00    0.00    1.00
+    0.00    0.00    0.00    0.00    0.00    1.00
+The feature will be discarded if the minimum of the maximal abs. value in it <    0.10000E-02
+The faature will be discarded if the maximum of the maximal abs. value in it >     0.10000E+06
+Size of the SIS-selected (single) subspace :    100   100   100
+Operators for feature construction: (+)(-)(*)(/)(^-1)(^2) (+)(-)(*)(/)(^-1)(^2) (+)(-)(*)(/)(^-1)(^2) 
+Method for sparse regression:  L0        
+Fitting intercept:      T
+Metric for model selection: RMSE
+Number of the top-ranked models to output:      100
+--------------------------------------------------------------------------------
+
+Dimension:   1
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space Phi00:             17
+Total number of features in the space Phi01:            507
+Total number of features in the space Phi02:          87038
+Total number of features in the space Phi03:      242522577
+Size of the SIS-selected subspace from Phi03:        100
+Time (second) used for this FC:           65.30
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features for this DI:        100
+Time (second) used for this DI:            0.01
+
+Dimension:   2
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space Phi00:             17
+Total number of features in the space Phi01:            507
+Total number of features in the space Phi02:          87038
+Total number of features in the space Phi03:      242522577
+Size of the SIS-selected subspace from Phi03:        100
+Time (second) used for this FC:          113.38
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features for this DI:        200
+Time (second) used for this DI:            0.02
+
+Dimension:   3
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space Phi00:             17
+Total number of features in the space Phi01:            507
+Total number of features in the space Phi02:          87038
+Total number of features in the space Phi03:      242522577
+Size of the SIS-selected subspace from Phi03:        100
+Time (second) used for this FC:          112.53
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features for this DI:        300
+ 
+  3D descriptor/model(y=sum(ci*di)+c0) : 
+================================================================================
+     d001 = (((V_X)^2*N_X)/((N_X+N_Y)+N_Z))    feature_ID:000008
+     d002 = (((N_X*V_Y)/(N_Z*V_X))-(Nd_Y/Nd_X))    feature_ID:000101
+     d003 = ((IE_X-IE_Z)/((XP_Y*Nd_Y)-(XP_Z*Nd_X)))    feature_ID:000203
+ 
+        coeff.(ci):    -0.9893598339E+00    0.9463343475E+00   -0.3018914103E+00
+                c0:     0.2401948766E+02
+    RMSE and MaxAE:     0.4115484479E+00    0.1567295395E+01
+================================================================================
+Time (second) used for this DI:            1.05
+Total time (second):          292.33
+Have a nice day !    
+

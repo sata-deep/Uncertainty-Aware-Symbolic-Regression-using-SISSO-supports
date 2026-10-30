@@ -1,1 +1,1 @@
-"""SISSO input readers and data structures used by the manuscript analysis."""
+"""Readers for deterministic SISSO files and generated screened spaces."""
