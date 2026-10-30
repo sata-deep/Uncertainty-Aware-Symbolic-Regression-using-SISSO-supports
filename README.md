@@ -3,6 +3,9 @@ This repository contains the Heusler-alloy data, deterministic SISSO outputs,
 
 and Python code for conditional Bayesian analysis of screened symbolic supports.
 
+![Uploading Thumbnail.png…]()
+
+
 The analysis provides support probabilities, feature inclusion probabilities,
 
 and Bayesian-model-averaged predictions.
